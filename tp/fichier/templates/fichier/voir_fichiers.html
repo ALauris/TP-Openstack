@@ -1,0 +1,9 @@
+<h1>Liste des fichier</h1>
+{% for fichier in fichiers %}
+    <h2>Adresse : {{ fichier.adresse }}</h2>
+	<div>
+    <img style="width: 150px; height: 150px;"src="../../media/{{ fichier.fichier.url }}"/>
+	<p><a href="../../media/{{ fichier.fichier.url }}">Telecharger le fichier</a></p>
+	</div>
+{% endfor %}
+
